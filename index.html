@@ -8,16 +8,18 @@
     <title>Document</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script defer src="app.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
-  <body>
-    <div>
-        <div class="">
-            <input class="" type="text" id="location-input" placeholder="Enter city"/>
-            <button id="search-button">Get Weather</button>
-          </div>
-          <div class="" id="weather-info"></div>
-          <div id="weather-forecast"></div>
+  <body class="bg-gray-100 font-sans">
+    <div class="container mx-auto p-8">
+        <div class="mb-6 flex items-center space-x-4 w-200">
+          <input class="border rounded w-full p-4 text-gray-700" type="text" id="location-input" placeholder="Enter a city or"/>
+          <button class="bg-slate-500 hover:bg-slate-700 text-white p-4 w-64 rounded " id="search-button">Get Weather</button>
+        </div>
+        <div class="bg-white shadow-md rounded-md p-6">
+          <div id="weather-info" class="mb-4"></div>
+          <div  id="weather-forecast"></div>
+        </div>
         </body>
     </div>
 </html>
